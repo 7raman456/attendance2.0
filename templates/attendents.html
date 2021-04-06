@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>attendents</title>
+</head>
+<body>
+<h1>studentlist</h1>
+{% for name in studentlist %}
+      <h5>{{ name }}</h5>
+      {% endfor %}
+
+<h1>presentlist</h1>
+{% for name in presentlist %}
+      <h5>{{ name }}</h5>
+      {% endfor %}
+
+<h1> absentlist </h1>
+{% for name in absentlist %}
+      <h5>{{ name }}</h5>
+      {% endfor %}
+</body>
+</html>

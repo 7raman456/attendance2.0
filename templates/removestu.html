@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>removestu</title>
+</head>
+<body>
+
+ <form method="post">
+    {% csrf_token %}
+
+
+    <div class="form-group">
+    <label for="name">Example select</label>
+    <select name="name" id="name" class="form-control" >
+
+      {% for name in studentlist %}
+      <option>{{ name.name }}</option>
+      {% endfor %}
+    </select>
+  </div>
+    <button type="submit">remove</button>
+  </form>
+
+
+
+</body>
+</html>
