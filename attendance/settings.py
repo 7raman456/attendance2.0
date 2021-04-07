@@ -15,11 +15,7 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-ALLOWED_HOSTS = [
-    '0.0.0.0',
-    'ancient-mountain-70111.herokuapp.com',
-    '127.0.0.1'
-]
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -30,8 +26,12 @@ SECRET_KEY = '=)^wek1w63@xv7mxwx8gz!*vz*51@k3%_6oghbms0j6^*6e&b6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
 
+ALLOWED_HOSTS = [
+    '0.0.0.0',
+    'ancient-mountain-70111.herokuapp.com',
+    '127.0.0.1'
+]
 
 # Application definition
 
